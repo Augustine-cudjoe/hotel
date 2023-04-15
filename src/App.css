@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Playfair+Display&family=Roboto:wght@500&display=swap');
+
+
+:root{
+  --primary-dark:rgb(8, 7, 7);
+  --primary-white:#fff;
+  --primary-red:#ef4035;
+  --primary-orange:#f9ab00;
+
+}
+body{
+  font-family: 'Roboto Condensed ', sans-serif;
+  overflow-x:hidden; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+nav a.nav-link{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  nav ul li{
+    text-transform: uppercase;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-nav > li> a{
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    color:var(--primary-dark) !important ;
+    
+  
   }
-}
+  .navbar-brand{
+    max-width: 1rem;
+    padding: 0 !important;
+    height: 6rem !important;
+  }
+  .logo{
+    width:5rem;
+    margin-top: 2rem;
+  }
+  .navbar-nav > li > a.active, .navbar-nav >li > a :focus{
+    border-bottom: 0.1875rem solid var(--primary-red);
+  }
+  .bg-img-1{
+    background-image: url("https://themewagon.github.io/keto/images/banner1.jpg");
+  }
+  .bg-img-2{
+    background-image: url(./components/images/banner1.jpeg) ;
+  }
+  .bg-img-3{
+    background-image: url(./components/images/banner2.jpeg);
+  }
+  .carousel-image{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  input[type="date"]{
+    width: 40%;
+    height: 4rem;
+    
+  }
+ 
+  .form-bg{
+    position: absolute;
+    background: var(--primary-dark);
+    top: 0;
+    left: 4rem;
+    border-left: 4px solid red;
+  }
+  .head{
+    height: 100vh;
+  }
+  .bg-card{
+    margin-top: 5rem;
+    height: 80vh;
+  }
+  .head-title{
+    margin-top: 5rem;
+    text-transform: uppercase;
+  }
+  .btn-dark{
+    text-transform: capitalize;
+    color: var(--primary-white);
+    height: 4rem;
+    width: 10rem;
+  }
+  .btn-dark:hover{
+    color: var(--primary-red);
+  }
+  .para{
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
